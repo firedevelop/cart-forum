@@ -137,7 +137,7 @@
 
     <main>
       <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm" style="background: rgb(0,0,255);
-      background: linear-gradient(68deg, rgb(116, 116, 255) 23%, rgba(245,212,245,1) 77%);">
+      background: linear-gradient(68deg, rgb(116, 116, 255) 23%, rgb(255, 227, 255) 77%);">
         <img class="me-3" src="assets/brand/bootstrap-logo-white.svg" alt="" width="48" height="38">
         <div class="lh-1">
           <h4>AI ticket event</h4>
@@ -160,17 +160,17 @@
       </p>
 
 
-      <div class="row g-5">
-        <div id="list-items" class="col-md-5 col-lg-4 order-md-last">
+      <div id="list-items"class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
           <div id="cart">
-            <div id="list-cart">
+            <div>
               <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-primary">Your cart</span>
                 <span class="badge bg-primary rounded-pill">3</span>
               </h4>
-              <ul class="list-group mb-3">
+              <ul id="list-cart" class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                  <button type="button" class="btn btn-outline-danger">
+                  <button type="button" class="item-delete btn btn-outline-danger">
                     <img src="assets/images/delete.svg">
                   </button>
                   <div>
@@ -178,10 +178,9 @@
                     <small class="text-body-secondary">1 ticket/s</small>
                   </div>
                   <div><span class="text-body-secondary">$12</span></div>
-
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                  <button type="button" class="btn btn-outline-danger">
+                  <button type="button" class="item-delete btn btn-outline-danger">
                     <img src="assets/images/delete.svg">
                   </button>
                   <div>
@@ -191,7 +190,7 @@
                   <div><span class="text-body-secondary">$8</span></div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between lh-sm">
-                  <button type="button" class="btn btn-outline-danger">
+                  <button type="button" class="item-delete btn btn-outline-danger">
                     <img src="assets/images/delete.svg">
                   </button>
                   <div>
@@ -202,7 +201,7 @@
 
                 </li>
                 <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
-                  <button type="button" class="btn btn-outline-danger">
+                  <button type="button" class="item-delete btn btn-outline-danger">
                     <img src="assets/images/delete.svg">
                   </button>
                   <div class="text-success">
@@ -237,7 +236,7 @@
                 <img src="assets/images/9.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail"
                   style="object-fit:cover;">
                 <div class="card-body">
-                  <p class="card-text"><b>Growth</b> Google AI for B2B would focus on how to use AI to automate tasks,
+                  <p class="title card-text"><b>Growth</b> Google AI for B2B would focus on how to use AI to automate tasks,
                     improve efficiency, and reduce costs.</p>
                   <p
                     class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
@@ -247,7 +246,7 @@
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
 
-                      <button class="btn btn-primary"><i class="fas fa-cart-plus add-to-cart"></i> $99</button>
+                      <button class="add-to-cart btn btn-primary" id-item="1"><i class="fas fa-cart-plus"></i> $99</button>
                     </div>
                     <small class="text-body-secondary">10am</small>
                   </div>
@@ -262,7 +261,7 @@
                 <img src="assets/images/8.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail"
                   style="object-fit:cover;">
                 <div class="card-body">
-                  <p class="card-text"><b>Innovation</b> Google AI for B2B would focus on how to use AI to make better decisions, identify new opportunities, and create new products and services.</p>
+                  <p class="title card-text"><b>Innovation</b> Google AI for B2B would focus on how to use AI to make better decisions, identify new opportunities, and create new products and services.</p>
                   <p
                     class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
                     <img class="rounded-circle me-1" width="24" height="24"
@@ -270,7 +269,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button class="btn btn-primary"><i class="fas fa-cart-plus add-to-cart"></i> $299</button>
+                      <button class="add-to-cart btn btn-primary" id-item="2"><i class="fas fa-cart-plus"></i> $299</button>
                     </div>
                     <small class="text-body-secondary">1pm</small>
                   </div>
@@ -283,8 +282,7 @@
                 <img src="assets/images/3.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail"
                   style="object-fit:cover;">
                 <div class="card-body">
-                  <p class="card-text"><b>Success</b> Google AI for B2B would focus on how to use AI to achieve business
-                    goals, such as increasing sales, improving customer satisfaction, and reducing risk.</p>
+                  <p class="title card-text"><b>Success</b> Google AI for B2B would focus on how to use AI to achieve business goals, such as increasing sales, improving customer satisfaction, and reducing risk.</p>
                   <p
                     class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
                     <img class="rounded-circle me-1" width="24" height="24" src="assets/images/13.jpg" alt="">with
@@ -292,7 +290,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button class="btn btn-primary"><i class="fas fa-cart-plus add-to-cart"></i> $299</button>
+                      <button class="add-to-cart btn btn-primary" id-item="3"><i class="fas fa-cart-plus"></i> $299</button>
                     </div>
                     <small class="text-body-secondary">4pm</small>
                   </div>
