@@ -62,24 +62,31 @@ function itemGetDetail(itemElement) {
 } */
 
 function cartHTML(){
-    //emptyCart()
+   //emptyCart()
     itemsOnCart.forEach(item => {
         const row = document.createElement('ul')
         console.log(item.title)
 
         row.innerHTML = `
-            <li>${item.title}</li>
-            <li>${item.quantity}</li>
-            <li>${item.price}</li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+        <button type="button" class="item-delete btn btn-outline-danger">
+          <img src="assets/images/delete.svg">
+        </button>
+        <div>
+          <h6 class="my-0">${item.title}</h6>
+          <small class="text-body-secondary">${item.quantity}</small>
+        </div>
+        <div><span class="text-body-secondary">${item.price}</span></div>
+      </li>
         `
         listCart.appendChild(row)
     })
 }
 
 /*  function emptyCart(){
-    while(listCart.firstChild){
-        listCart.removeChild(listCart.firstChild)
-    }
+while(listCart){
+        listCart.removeChild(listCart)
+    } 
 } 
- */
+  */
  
