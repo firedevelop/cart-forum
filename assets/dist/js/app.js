@@ -10,7 +10,7 @@ cartEventListeners()
 function cartEventListeners() {
     listItems.addEventListener('click', addItem)
     cart.addEventListener('click', deleteItem)
-    emptyCart.addEventListener('click', emptyCartItems)
+   emptyCart.addEventListener('click', emptyCartItems)
 }
 
 function addItem(e) {
@@ -62,9 +62,9 @@ function itemGetDetail(itemElement) {
 } */
 
 function cartHTML(){
-   //emptyCart()
+   //emptylistCart()
     itemsOnCart.forEach(item => {
-        const row = document.createElement('ul')
+        const row = document.createElement('li')
         console.log(item.title)
 
         row.innerHTML = `
@@ -83,10 +83,11 @@ function cartHTML(){
     })
 }
 
-/*  function emptyCart(){
+/*  function emptylistCart(){
 while(listCart){
-        listCart.removeChild(listCart)
+      listCart.remove
+
     } 
-} 
-  */
+} */ 
+ 
  
