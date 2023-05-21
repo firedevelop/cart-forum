@@ -53,16 +53,16 @@ function itemGetDetail(itemElement) {
    cartHTML();
 }
 
-/* function itemDelete(e){
+function itemDelete(e){
     if(e.target.classList.contains('.item-delete')){
         const itemID = e.target.getAttribute('id-item')
         itemsOnCart = itemsOnCart.filter( item => item.id !== itemID)
         cartHTML()
     }
-} */
+} 
 
 function cartHTML(){
-   //emptylistCart()
+   emptylistCart()
     itemsOnCart.forEach(item => {
         const row = document.createElement('li')
         console.log(item.title)
@@ -83,11 +83,11 @@ function cartHTML(){
     })
 }
 
-/*  function emptylistCart(){
-while(listCart){
-      listCart.remove
+function emptylistCart(){
+while(listCart.firstChild){
+      listCart.removeChild(listCart.firstChild)
 
     } 
-} */ 
+} 
  
  
